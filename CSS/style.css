@@ -1,0 +1,38 @@
+/* .img-main{
+  width: 500px;
+  height: 500px;
+}
+ */
+
+/* .table-main{
+   border: 10px dotted black;
+
+ } */
+
+table {
+  border: 2px solid coral;
+  padding: 20px;
+  border-collapse: collapse;
+}
+tr,
+td,
+th {
+  border: 2px solid coral;
+  padding: 20px;
+
+  border-collapse: collapse;
+}
+
+table tr td {
+  background: crimson;
+}
+.table-data {
+  writing-mode: vertical-lr;
+  border-collapse: separate;
+  padding: 50px;
+}
+
+/* Different ways of giving values 
+ padding:5px; one value for top , right, bottom ,left
+ padding:10px 20px;  one value for top and bottom and one value for right and left.
+ padding:10px 20px 20px 20px; different value for top , right, bottom and left */
