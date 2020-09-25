@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,100;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin-top: 200px;
+   
+
+}
+
+.main-container{
+    margin:100px;
+  
+    border:2px solid crimson;
+    padding: 10px;
+   
+}
+.main-container p{
+   
+   
+    padding: 10px;
+    margin-bottom: 10px;
+    border:2px solid crimson;
+
+
+}
+.para-1{
+    display: inline;
+}
+.click-me-2{
+    padding: 30px;
+    display: inline-block;
+    
+}
+.btn{
+    padding:15px 50px;
+    margin-right: 20px;
+    border:2px solid crimson;
+    background:crimson ;
+    text-decoration: none;
+    color: wheat;
+    display:inline-block;
+    border-radius:10px;
+    box-shadow: 2px 2px 2px black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Lato', sans-serif;
+  
+
+
+}
+.btn:hover{
+    background: wheat;
+    color: crimson;
+    border:2px solid wheat;
+
+
+}
+.outer-div{
+    /* display: block; */
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+   margin: auto;
+   margin-bottom: 100px;
+   position: relative;
+}
+.inner-div-1{
+    width:50px;
+    height: 50px;
+    background: blue;
+    position: sticky;
+  
+    top: 0;
+   right: 0;
+    
+}
+.inner-div-2{
+    width:50px;
+    height: 50px;
+    background: crimson;
+}
