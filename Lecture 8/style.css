@@ -14,7 +14,7 @@ h1{
     color: wheat;
     padding:20px;
 }
-
+/* 
 .container{
     background: #999;
     padding: 40px;
@@ -47,4 +47,78 @@ h1{
     order: -1 ;
   flex-basis: 200px ;
   
+} */
+
+
+
+/* .container{
+    background: coral;
+    
+    padding: 40px;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-end;
+  
+
+}
+.item{
+    background: cornsilk;
+    padding: 20px;
+    margin:20px;
+    color: #333;
+} */
+/* .i1{
+    height: 100px;
+} */
+/* .i1{
+  font-size: 30px;
+  order:1;
+  flex-basis: 350px;
+  flex-shrink: 0;
+}
+.i5{
+   align-self: center;
+   order:-1;
+   flex-grow: 1;
+}
+.i3{
+    flex-grow: 2;
+    flex-shrink: 0 ;
+    
+
+} */
+.navbar-main{
+    /* background: rgba(255, 255, 255,0.5); */
+    background-color: rgba(0,0,0,0.0);
+    box-shadow: 2px 5px 10px rgb(0, 0, 0,0.5);
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding:10px 50px;
+}
+.logo{
+    font-size: 30px;
+    color: #1d3557;
+}
+.logo-text{
+    font-size: 30px;
+    margin-left: 10px;
+}
+.li-containers{
+    display: flex;
+}
+.item {
+    padding: 10px;
+   
+}
+.btn{
+    background: #457b9d;
+    color: #f1faee;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-left:10px;
+cursor: pointer;
 }
