@@ -96,8 +96,8 @@ h1{
     box-shadow: 2px 5px 10px rgb(0, 0, 0,0.5);
     display: flex;
     justify-content: space-between;
-    align-content: center;
-    padding:10px 50px;
+   align-items: center;
+    padding:15px 50px;
 }
 .logo{
     font-size: 30px;
@@ -107,11 +107,17 @@ h1{
     font-size: 30px;
     margin-left: 10px;
 }
+.logo-side{
+   
+}
 .li-containers{
     display: flex;
+    align-items: center;
 }
 .item {
     padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
    
 }
 .btn{
@@ -120,5 +126,12 @@ h1{
     border-radius: 5px;
     text-transform: uppercase;
     margin-left:10px;
-cursor: pointer;
+    letter-spacing: 0.3px;
+
+}
+.btn-outline{
+    color:  #457b9d;
+    border:1px solid#457b9d;
+    border-radius: 5px;
+    padding:9px;
 }
