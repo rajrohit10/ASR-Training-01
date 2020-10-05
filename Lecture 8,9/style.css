@@ -134,3 +134,37 @@ h1{
     border-radius: 5px;
     padding:9px;
 }
+
+.navbar-main-1{
+    display: flex;
+    background: orange;
+    padding:20px;
+    justify-content:center;
+    /* flex-direction: row-reverse; */
+    align-items: flex-end;
+
+
+}
+.item{
+    background: crimson;
+    padding:10px;
+    margin:20px;
+
+}
+.i1{
+    font-size: 36px;
+    flex:2;
+  
+}
+/* .margin-now{
+margin: 10px auto;
+} */
+.i5{
+    align-self: stretch;
+    flex: 1;
+}
+.i3{
+   
+    flex:0;
+    flex-basis: 30%;
+}
