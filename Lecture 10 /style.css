@@ -92,7 +92,7 @@ body {
 }
 .overlay {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   z-index: 2;
   width: 100%;
   height: 100%;
@@ -347,11 +347,12 @@ body {
 .card-container{
   display: flex;
   max-width: 1300px;
-  height:300px;
+ 
   margin: auto;
   margin-top: 100px;
   margin-bottom: 100px;
   justify-content: space-between;
+ 
 
 
 }
@@ -359,6 +360,33 @@ body {
   padding:20px;
   margin:20px;
   transition: 0.2s all;
+
+  border-radius: 5px;
+ 
+
+}
+.card-container>div:nth-child(1){
+  border-bottom:3px solid rgb(220, 20, 60);
+  box-shadow: 2px 10px 60px rgba(220, 20, 60,.09);
+
+
+}
+.card-container>div:nth-child(2){
+  border-bottom:3px solid rgb(255, 165, 0);
+  box-shadow: 2px 10px 60px rgba(255, 165, 0,.09);
+
+}
+.card-container>div:nth-child(3){
+  border-bottom:3px solid green;
+  box-shadow: 0 10px 60px rgba(0, 128, 0,.09);
+
+
+}
+.card-container>div:nth-child(4){
+  border-bottom:3px solid darkcyan;
+  box-shadow: 0 10px 60px rgba(0, 139, 139,.09);
+
+
 
 }
 .card-container>div>i{
@@ -389,8 +417,9 @@ color: darkcyan;
 }
 .card-container>div>h3{
   font-size: 20px;
-  color:darkcyan;
+  color:#333;
   margin-bottom: 12px;
+  line-height: 1.3;
   
 }
 .card-container>div>p{
@@ -400,12 +429,12 @@ color: darkcyan;
 
 
 }
-.card-container>div:hover{
+/* .card-container>div:hover{
  
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
   border-radius: 5px;
   padding:30px 20px;
-}
+} */
 /* .about-us-readmore{
   padding:10px 40px;
   background: darkcyan;
@@ -421,4 +450,238 @@ color: darkcyan;
   margin-bottom: 50px;
   
   
+}
+.our-rooms{
+  display: flex;
+  max-width: 1300px;
+  padding:50px;
+ 
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  flex-direction: column;
+}
+.room-grids{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(2,220px);
+  grid-gap: 30px;
+}
+.room{
+  position: relative;
+}
+.room-1{
+  grid-column: 1/3;
+  grid-row: 1/3;
+  background: url('room-1.jpg') no-repeat center center/cover;
+}
+.room-2{
+  background: url('room2.jpg') no-repeat center center/cover;
+}
+.room-3{
+  background: url('room-3.jpg') no-repeat center center/cover;
+}
+.room-4{
+  background: url('room-4.jpg') no-repeat center center/cover;
+}
+.room-5{
+  background: url('room-5.jpg') no-repeat center center/cover;
+}
+.price-tag{
+  background: crimson;
+  position: absolute;
+  z-index: 100;
+  padding:3px 15px;
+  margin-top: 15px;
+  right:5%;
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 11px;
+  border-radius: 1px;
+}
+.color-bg-1{
+  background:  crimson;
+
+}
+.color-bg-2{
+  background:  orange;
+
+}
+.color-bg-3{
+  background: darkcyan;
+
+}
+.color-bg-4{
+  background:  green;
+
+}
+.room-category{
+  position: absolute;
+  z-index: 100;
+  padding:10px 15px;
+  bottom: 0;
+  width: 100%;
+
+  font-size: 14px;
+  color: whitesmoke;
+letter-spacing: 1px;
+text-transform: uppercase;
+
+}
+.room:hover .room-category{
+
+  
+    background: rgba(0, 0, 0,.6);
+    color: wheat;
+    
+  
+  
+
+}
+
+/*
+Alternate Way 1
+.room:hover>.room-category{
+
+  
+    background: rgba(0, 0, 0,.6);
+    color: wheat;
+    
+  
+  
+
+}
+
+
+Alternate Way 2
+.room:hover>div:nth-child(3) {
+
+  
+    background: rgba(0, 0, 0,.6);
+    color: wheat;
+    
+  
+  
+
+}
+ */
+.main-room-category{
+  display: flex;
+  flex-direction: column;
+  
+  position:absolute;
+  margin:20px;
+  bottom: 2%;
+  right: 2%;
+  left:2%;
+  padding:20px;
+  
+  background: rgba(0, 0, 0,.6);
+  
+ 
+}
+.main-room-category .room-Luxury{
+  font-size: 31px;
+  color: wheat;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 19px;
+  
+
+}
+.features-luxury{
+  display: flex;
+  justify-content: space-between;
+}
+.features-luxury>div{
+  font-size: 16px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: .4px;
+
+}
+.margin-right{
+  margin-right: 10px;
+}
+.btn-for-direct-room-book{
+  background: darkcyan;
+  padding:10px 40px;
+  margin-top: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: wheat;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  z-index: 100;
+}
+.btn-for-direct-room-book:hover{
+  background: rgb(7, 105, 105);
+
+}
+.room-Luxury{
+  z-index: 100;
+}
+.features-luxury{
+  z-index: 100;
+}
+.card-info{
+  display: flex;
+
+  max-width: 1200px;
+  
+  margin:20px auto;
+ 
+  /* padding:50px; Important to note  padding does not work in images */
+  padding:20px 50px;
+  height: 200px;
+  background:url('beach-3.jpg') no-repeat center center/cover;
+  position: relative;
+
+}
+.overlay-main{
+  position: absolute;
+  top:0;
+  left:0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0,0,0,.5);
+}
+.card-content{
+  display: flex;
+  width: 100%;
+
+  justify-content: space-between;
+  z-index: 100;
+  align-items: center;
+
+}
+.card-content>h1{
+  flex: 2;
+  font-size: 30px;
+  color: wheat;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  align-self: center;
+  letter-spacing: .8px;
+}
+.align-item{
+  align-self: center;
+}
+.card-content>h1>span{
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  margin-top: 0px;
+  padding-top: 0px;
+letter-spacing: .6px;
+
 }
