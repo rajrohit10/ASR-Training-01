@@ -23,6 +23,7 @@ body {
 /** NAVBAR SECTION   **/
 .navbar {
   display: flex;
+  /* flex-direction: column; */
   justify-content: space-between;
 
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
@@ -340,4 +341,84 @@ body {
   color: orange;
   font-size: 15px;
   margin-left: 10px;
+}
+
+/*About us boxes */
+.card-container{
+  display: flex;
+  max-width: 1300px;
+  height:300px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  justify-content: space-between;
+
+
+}
+.card-container>div{
+  padding:20px;
+  margin:20px;
+  transition: 0.2s all;
+
+}
+.card-container>div>i{
+  
+  font-size: 45px;
+  margin-bottom: 25px;
+
+}
+.fa-heart{
+  
+  color: crimson;
+
+}
+.fa-route{
+  
+  color:orange;
+
+}
+.fa-suitcase-rolling{
+  
+  color:green;
+
+}
+.fa-person-booth{
+  
+color: darkcyan;
+
+}
+.card-container>div>h3{
+  font-size: 20px;
+  color:darkcyan;
+  margin-bottom: 12px;
+  
+}
+.card-container>div>p{
+  font-size: 14px;
+  color: #777;
+  text-align:justify;
+
+
+}
+.card-container>div:hover{
+ 
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  border-radius: 5px;
+  padding:30px 20px;
+}
+/* .about-us-readmore{
+  padding:10px 40px;
+  background: darkcyan;
+  display: none;
+} */
+
+.grid-container{
+  display: grid;   
+  grid-template-columns: repeat(4,270px);
+  justify-content: center;
+/* max-width: 1300px; */
+  grid-gap: 70px;
+  margin-bottom: 50px;
+  
+  
 }
